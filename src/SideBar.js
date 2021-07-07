@@ -17,10 +17,11 @@ function SideBar() {
 			<SideBarRow src = 'https://miro.medium.com/fit/c/1360/1360/1*SriGhsmjfGzFv56eXNZT1w.jpeg' title = 'Anish Yadav' />
 			<SideBarRow Icon = {LocalHospitalIcon} title = 'COVID-19 Information Center' />
 			<SideBarRow Icon = {EmojiFlagsIcon} title = 'Pages' />
-			<SideBarRow Icon = {ChatIcon} title = 'Friends' />
+			<SideBarRow Icon = {PeopleIcon} title = 'Friends' />
+			<SideBarRow Icon = {ChatIcon} title = 'Messenger' />
 			<SideBarRow Icon = {StorefrontIcon} title = 'Marketplace' />
 			<SideBarRow Icon = {VideoLibraryIcon} title = 'Videos' />
-			<SideBarRow Icon = {ExpandMoreOutlined} title = 'Marketplace' />
+			<SideBarRow Icon = {ExpandMoreOutlined} title = 'Expand' />
 		</div>
 	)
 }

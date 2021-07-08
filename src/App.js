@@ -5,19 +5,24 @@ import Header from './Header';
 import SideBar from './SideBar';
 import Widgets from './Widgets';
 import Feed from './Feed';
+import Login from './Login';
 
 function App() {
+  const user = null;
   return (
-  	// using the BEM naming convention of CSS, it helps when apps
-  	// are needed to be scaled up
     <div className="app">
-  	   <Header />
-
-  	   <div className="app__body">
-         <SideBar />
-	       <Feed />
-				 <Widgets />
-  	   </div>
+        {!user ? <Login />
+          : (
+            <>
+              <Header />
+              <div className="app__body">
+                <SideBar />
+                <Feed />
+                <Widgets />
+              </div>
+            </>
+          )
+        }
     </div>
   );
 }
